@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "base": 5,
+  "dealbreakers": {
+    "maxScore": 2,
+    "items": ["rigid-hierarchy", "micromanagement", "questionable-ethics", "gambling"]
+  },
+  "salary": {
+    "currency": "EUR",
+    "targetK": 65,
+    "hardFloorK": 55,
+    "belowTargetPenalty": -1
+  },
+  "boosts": [
+    { "id": "design-minded", "weight": 2.5, "signals": ["design team", "craft", "design system", "polished UI"] },
+    { "id": "social-impact", "weight": 2.5, "signals": ["health", "mental health", "education", "climate"] },
+    { "id": "ai-in-product", "weight": 1.5, "signals": ["LLM", "agents", "AI features in production"] },
+    { "id": "creative-domain", "weight": 1, "signals": ["fashion", "art", "design tools", "creators", "music"] },
+    { "id": "talk-to-users", "weight": 1, "signals": ["customer calls", "user research"] },
+    { "id": "healthy-company", "weight": 1, "signals": ["profitable", "Series A", "recent funding"] },
+    { "id": "office-perks", "weight": 0.5, "signals": ["nice office", "team events", "learning budget"] }
+  ],
+  "penalties": [
+    { "id": "team-over-200", "weight": -1 }
+  ]
+}
